@@ -77,6 +77,10 @@ ol {
       -ms-flex-align: center;
           align-items: center;
 }
+.wrapper .container header .nav label,
+.wrapper .container header .nav input {
+  display: none;
+}
 .wrapper .container header .nav ul {
   font-family: " Barlow";
   font-weight: 600;
@@ -128,7 +132,6 @@ ol {
 .wrapper .box .text {
   padding: 158px 0 0 165px;
   width: 720px;
-  height: 600px;
 }
 .wrapper .box .text .name {
   font-family: "Fraunces";
@@ -226,7 +229,6 @@ ol {
   display: flex;
   width: 100%;
   max-width: 1440px;
-  height: 600px;
 }
 .wrapper .box_3 .cherry {
   padding: 398px 190px 59px 190px;
@@ -394,10 +396,21 @@ ol {
   line-height: 25px;
 }
 .wrapper .fotr_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
   margin-top: 50px;
-  width: 100%;
-  max-width: 1440px;
+}
+.wrapper .fotr_img .foto_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .fotr_img .foto_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .wrapper footer {
   display: -webkit-box;
@@ -475,11 +488,49 @@ ol {
     margin: 0 auto;
   }
   .wrapper .container header {
+    position: relative;
     padding: 32px 0;
     width: 327px;
   }
+  .wrapper .container header .nav label {
+    display: block;
+  }
   .wrapper .container header .nav ul {
     display: none;
+    width: 329px;
+    height: 305px;
+    background: #fff;
+  }
+  .wrapper .container header .nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 20px;
+    line-height: 25px;
+    color: #808397;
+  }
+  .wrapper .container header .nav ul .nav-list_5 {
+    background: yellow;
+  }
+  .wrapper .container header .nav input:checked + ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 80px;
   }
   .wrapper .container header h1 {
     text-align: center;
@@ -498,7 +549,7 @@ ol {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    height: 720px;
+    height: 730px;
     width: 375px;
   }
   .wrapper .box .text {
@@ -506,18 +557,19 @@ ol {
     padding: 64px 24px;
   }
   .wrapper .box .text .name {
+    height: 70px;
     text-align: center;
     width: 327px;
     font-size: 32px;
     line-height: 32px;
   }
   .wrapper .box .text p {
-    margin: 0;
     width: 327px;
+    height: 150px;
     text-align: center;
   }
   .wrapper .box .text h4 {
-    top: 20px;
+    margin-top: 20px;
     text-align: center;
   }
   .wrapper .box .text h4::after {
@@ -531,7 +583,7 @@ ol {
   .wrapper .box_2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 700px;
+    height: 730px;
     width: 375px;
   }
   .wrapper .box_2 .imgs_2 img {
@@ -543,18 +595,19 @@ ol {
     padding: 64px 24px;
   }
   .wrapper .box_2 .text_2 .name {
+    height: 70px;
     text-align: center;
     width: 327px;
     font-size: 32px;
     line-height: 32px;
   }
   .wrapper .box_2 .text_2 p {
-    margin: 0;
+    height: 150px;
     width: 327px;
     text-align: center;
   }
   .wrapper .box_2 .text_2 h4 {
-    top: 20px;
+    margin-top: 20px;
     text-align: center;
   }
   .wrapper .box_2 .text_2 h4::after {
@@ -580,7 +633,7 @@ ol {
   .wrapper .infornation {
     margin-top: 64px;
     width: 375px;
-    height: 1108px;
+    height: 1118px;
   }
   .wrapper .infornation h1 {
     font-size: 16px;
@@ -621,19 +674,20 @@ ol {
     margin-top: 32px;
   }
   .wrapper .fotr_img {
-    width: 327px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-top: 86px;
+    width: 375px;
+    height: 375px;
+    display: grid;
   }
-  .wrapper .fotr_img .foto_1 {
+  .wrapper .fotr_img .foto_1 img {
+    height: 100%;
     width: 188px;
   }
-  .wrapper .fotr_img img {
-    height: 188px;
+  .wrapper .fotr_img .foto_2 img {
+    height: 100%;
+    width: 188px;
+  }
+  .wrapper footer {
+    margin-top: 90px;
   }
 }
