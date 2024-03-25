@@ -622,12 +622,12 @@ ol {
   }
   .wrapper .box_3 .cherry {
     width: 375px;
-    background-size: 150% 150%;
+    background-position: center;
     padding: 398px 24px 59px 24px;
   }
   .wrapper .box_3 .mandarn {
     width: 375px;
-    background-size: 150% 150%;
+    background-position: center;
     padding: 398px 24px 59px 24px;
   }
   .wrapper .infornation {
